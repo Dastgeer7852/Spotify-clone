@@ -1,30 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyonet</title>
+    <link rel="shortcut icon" href="spotify.png" type="image/x-icon" />
+    <link rel="stylesheet" href="cs/style.css" />
+    <link rel="stylesheet" href="cs/utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
     <div class="container flex bg-black">
-        <div class="left">
-            <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img class="invert" src="logo.svg" alt="logo">Spotify</div>
-                <ul>
-                    <li><img class="invert" src="home.svg" alt="home">Home</li>
-                    <li><img class="invert" src="search.svg" alt="search">Search</li>
-                </ul>
-            </div>
-            <div class="library bg-grey rounded m-1 p-1">
-                Your Library
-            </div>
+      <div class="left">
+        <div class="close">
+          <img class="invert" src="/img/close.svg" alt="" />
         </div>
-        <div class="right">
-            dastgeer hassan
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <img class="invert" src="/img/logo.svg" alt="logo" />Spotify
+          </div>
+          <ul>
+            <li><img class="invert" src="/img/home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="/img/search.svg" alt="search" />Search</li>
+          </ul>
         </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="/img/playlist-svgrepo-com.svg" alt="" />
+            <h2>Your Library</h2>
+          </div>
+
+          <div class="songList">
+            <ul></ul>
+          </div>
+
+          <div class="footer">
+            <a href="#">Legal</a>
+            <a href="#">Safety</a>
+            <a href="#">PrivacyPolicy</a>
+            <a href="#">Cookies</a>
+            <a href="#">AboutAds</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <div class="hamburgerContainer">
+              <img class="invert hamburger" src="/img/hamburger.svg" alt="" />
+              <img
+                class="invert"
+                src="/img/arrow-left-01-stroke-rounded.svg"
+                alt=""
+              />
+              <img
+                class="invert"
+                src="/img/arrow-right-01-stroke-rounded.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign up</button>
+            <button class="loginbtn">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <h1>Spotify Playlists</h1>
+          <div class="cardContainer">
+           
+          </div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="abovebar">
+              <div class="songinfo"></div>
+              <div class="songbuttons">
+                <img id="previous" src="/img/prevsong.svg" alt="" />
+                <img id="play" src="/img/play.svg" alt="" />
+                <img id="next" src="/img/nextsong.svg" alt="" />
+              </div>
+              <div class="timevol">
+                <div class="songtime"></div>
+                <div class="volume">
+                  <img src="/img/volume.svg" alt="" />
+                  <div class="range">
+                    <input type="range" name="volume" id="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
